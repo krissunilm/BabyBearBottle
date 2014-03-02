@@ -7,12 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import <FYX/FYX.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [FYX setAppId:@"498598ebfd736216c15b33acd52c3ebe8ba632571902c20f077f6842bf817d5a" appSecret:@"ee43e268d954ace96433eb545c72d20637892f3e04aa5dc70bbce09e2e6c2e33" callbackUrl:@"your://app-url"];
+    
+    [FYX startService:self];
+    
     return YES;
 }
 							
@@ -42,5 +48,17 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/// comment for documentation
+- (void)serviceStarted {
+    NSLog(@"Service Started by Kris");
+}
+
+/// comment for documentation
+- (void)startServiceFailed:(NSError *)error {
+    NSLog(@"Service Start FAILED pls check Kris");
+}
+
+
 
 @end

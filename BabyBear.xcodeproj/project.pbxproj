@@ -21,6 +21,23 @@
 		222AA91A18C2B2D700CEFDBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222AA8FC18C2B2D700CEFDBD /* UIKit.framework */; };
 		222AA92218C2B2D700CEFDBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222AA92018C2B2D700CEFDBD /* InfoPlist.strings */; };
 		222AA92418C2B2D700CEFDBD /* BabyBearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 222AA92318C2B2D700CEFDBD /* BabyBearTests.m */; };
+		2242F7AB18C2D7BD00AD3CC7 /* Bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7AA18C2D7BD00AD3CC7 /* Bear.png */; };
+		2242F7AD18C2D7D000AD3CC7 /* Bottle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7AC18C2D7D000AD3CC7 /* Bottle.png */; };
+		2242F7B118C2DC2100AD3CC7 /* BabyObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242F7B018C2DC2100AD3CC7 /* BabyObjects.m */; };
+		2242F7B318C2E45900AD3CC7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7B218C2E45900AD3CC7 /* CoreBluetooth.framework */; };
+		2242F7B518C2E46800AD3CC7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7B418C2E46800AD3CC7 /* CoreLocation.framework */; };
+		2242F7B718C2E47500AD3CC7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7B618C2E47500AD3CC7 /* CoreData.framework */; };
+		2242F7B918C2E48000AD3CC7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7B818C2E48000AD3CC7 /* libz.dylib */; };
+		2242F7BB18C2E48D00AD3CC7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7BA18C2E48D00AD3CC7 /* MapKit.framework */; };
+		2242F7BD18C2E49900AD3CC7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7BC18C2E49900AD3CC7 /* Security.framework */; };
+		2242F7D018C2E4CB00AD3CC7 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7BF18C2E4CB00AD3CC7 /* Common.framework */; };
+		2242F7D118C2E4CC00AD3CC7 /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7C218C2E4CB00AD3CC7 /* ContextCore.framework */; };
+		2242F7D218C2E4CC00AD3CC7 /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7C518C2E4CB00AD3CC7 /* ContextLocation.framework */; };
+		2242F7D318C2E4CC00AD3CC7 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7C718C2E4CB00AD3CC7 /* DataModels.bundle */; };
+		2242F7D418C2E4CC00AD3CC7 /* ContextProfiling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7C918C2E4CB00AD3CC7 /* ContextProfiling.framework */; };
+		2242F7D518C2E4CC00AD3CC7 /* rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7CB18C2E4CB00AD3CC7 /* rules.txt */; };
+		2242F7D618C2E4CC00AD3CC7 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7CC18C2E4CB00AD3CC7 /* FYX.framework */; };
+		2242F7D718C2E4CC00AD3CC7 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7CE18C2E4CB00AD3CC7 /* NetworkServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +70,24 @@
 		222AA91F18C2B2D700CEFDBD /* BabyBearTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BabyBearTests-Info.plist"; sourceTree = "<group>"; };
 		222AA92118C2B2D700CEFDBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		222AA92318C2B2D700CEFDBD /* BabyBearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabyBearTests.m; sourceTree = "<group>"; };
+		2242F7AA18C2D7BD00AD3CC7 /* Bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bear.png; sourceTree = "<group>"; };
+		2242F7AC18C2D7D000AD3CC7 /* Bottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bottle.png; sourceTree = "<group>"; };
+		2242F7AF18C2DC2100AD3CC7 /* BabyObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyObjects.h; sourceTree = "<group>"; };
+		2242F7B018C2DC2100AD3CC7 /* BabyObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyObjects.m; sourceTree = "<group>"; };
+		2242F7B218C2E45900AD3CC7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2242F7B418C2E46800AD3CC7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2242F7B618C2E47500AD3CC7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2242F7B818C2E48000AD3CC7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2242F7BA18C2E48D00AD3CC7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2242F7BC18C2E49900AD3CC7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2242F7BF18C2E4CB00AD3CC7 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		2242F7C218C2E4CB00AD3CC7 /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
+		2242F7C518C2E4CB00AD3CC7 /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
+		2242F7C718C2E4CB00AD3CC7 /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
+		2242F7C918C2E4CB00AD3CC7 /* ContextProfiling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextProfiling.framework; sourceTree = "<group>"; };
+		2242F7CB18C2E4CB00AD3CC7 /* rules.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rules.txt; sourceTree = "<group>"; };
+		2242F7CC18C2E4CB00AD3CC7 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
+		2242F7CE18C2E4CB00AD3CC7 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +95,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2242F7BD18C2E49900AD3CC7 /* Security.framework in Frameworks */,
+				2242F7D718C2E4CC00AD3CC7 /* NetworkServices.framework in Frameworks */,
+				2242F7BB18C2E48D00AD3CC7 /* MapKit.framework in Frameworks */,
+				2242F7B918C2E48000AD3CC7 /* libz.dylib in Frameworks */,
+				2242F7D218C2E4CC00AD3CC7 /* ContextLocation.framework in Frameworks */,
+				2242F7D618C2E4CC00AD3CC7 /* FYX.framework in Frameworks */,
+				2242F7B718C2E47500AD3CC7 /* CoreData.framework in Frameworks */,
+				2242F7D118C2E4CC00AD3CC7 /* ContextCore.framework in Frameworks */,
+				2242F7B518C2E46800AD3CC7 /* CoreLocation.framework in Frameworks */,
+				2242F7B318C2E45900AD3CC7 /* CoreBluetooth.framework in Frameworks */,
 				222AA8FB18C2B2D700CEFDBD /* CoreGraphics.framework in Frameworks */,
+				2242F7D418C2E4CC00AD3CC7 /* ContextProfiling.framework in Frameworks */,
+				2242F7D018C2E4CB00AD3CC7 /* Common.framework in Frameworks */,
 				222AA8FD18C2B2D700CEFDBD /* UIKit.framework in Frameworks */,
 				222AA8F918C2B2D700CEFDBD /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +148,18 @@
 		222AA8F718C2B2D700CEFDBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2242F7BE18C2E4CB00AD3CC7 /* Common.embeddedframework */,
+				2242F7C118C2E4CB00AD3CC7 /* ContextCore.embeddedframework */,
+				2242F7C418C2E4CB00AD3CC7 /* ContextLocation.embeddedframework */,
+				2242F7C818C2E4CB00AD3CC7 /* ContextProfiling.embeddedframework */,
+				2242F7CC18C2E4CB00AD3CC7 /* FYX.framework */,
+				2242F7CD18C2E4CB00AD3CC7 /* NetworkServices.embeddedframework */,
+				2242F7BC18C2E49900AD3CC7 /* Security.framework */,
+				2242F7BA18C2E48D00AD3CC7 /* MapKit.framework */,
+				2242F7B818C2E48000AD3CC7 /* libz.dylib */,
+				2242F7B618C2E47500AD3CC7 /* CoreData.framework */,
+				2242F7B418C2E46800AD3CC7 /* CoreLocation.framework */,
+				2242F7B218C2E45900AD3CC7 /* CoreBluetooth.framework */,
 				222AA8F818C2B2D700CEFDBD /* Foundation.framework */,
 				222AA8FA18C2B2D700CEFDBD /* CoreGraphics.framework */,
 				222AA8FC18C2B2D700CEFDBD /* UIKit.framework */,
@@ -112,6 +171,8 @@
 		222AA8FE18C2B2D700CEFDBD /* BabyBear */ = {
 			isa = PBXGroup;
 			children = (
+				2242F7AE18C2DB0E00AD3CC7 /* Models */,
+				2242F7A918C2D7A700AD3CC7 /* Images */,
 				222AA90718C2B2D700CEFDBD /* AppDelegate.h */,
 				222AA90818C2B2D700CEFDBD /* AppDelegate.m */,
 				222AA90A18C2B2D700CEFDBD /* Main.storyboard */,
@@ -150,6 +211,106 @@
 				222AA92018C2B2D700CEFDBD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2242F7A918C2D7A700AD3CC7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7AC18C2D7D000AD3CC7 /* Bottle.png */,
+				2242F7AA18C2D7BD00AD3CC7 /* Bear.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2242F7AE18C2DB0E00AD3CC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7AF18C2DC2100AD3CC7 /* BabyObjects.h */,
+				2242F7B018C2DC2100AD3CC7 /* BabyObjects.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2242F7BE18C2E4CB00AD3CC7 /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7BF18C2E4CB00AD3CC7 /* Common.framework */,
+				2242F7C018C2E4CB00AD3CC7 /* Resources */,
+			);
+			path = Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		2242F7C018C2E4CB00AD3CC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2242F7C118C2E4CB00AD3CC7 /* ContextCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7C218C2E4CB00AD3CC7 /* ContextCore.framework */,
+				2242F7C318C2E4CB00AD3CC7 /* Resources */,
+			);
+			path = ContextCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		2242F7C318C2E4CB00AD3CC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2242F7C418C2E4CB00AD3CC7 /* ContextLocation.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7C518C2E4CB00AD3CC7 /* ContextLocation.framework */,
+				2242F7C618C2E4CB00AD3CC7 /* Resources */,
+			);
+			path = ContextLocation.embeddedframework;
+			sourceTree = "<group>";
+		};
+		2242F7C618C2E4CB00AD3CC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7C718C2E4CB00AD3CC7 /* DataModels.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2242F7C818C2E4CB00AD3CC7 /* ContextProfiling.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7C918C2E4CB00AD3CC7 /* ContextProfiling.framework */,
+				2242F7CA18C2E4CB00AD3CC7 /* Resources */,
+			);
+			path = ContextProfiling.embeddedframework;
+			sourceTree = "<group>";
+		};
+		2242F7CA18C2E4CB00AD3CC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7CB18C2E4CB00AD3CC7 /* rules.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2242F7CD18C2E4CB00AD3CC7 /* NetworkServices.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7CE18C2E4CB00AD3CC7 /* NetworkServices.framework */,
+				2242F7CF18C2E4CB00AD3CC7 /* Resources */,
+			);
+			path = NetworkServices.embeddedframework;
+			sourceTree = "<group>";
+		};
+		2242F7CF18C2E4CB00AD3CC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +390,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				222AA91118C2B2D700CEFDBD /* Images.xcassets in Resources */,
+				2242F7AB18C2D7BD00AD3CC7 /* Bear.png in Resources */,
 				222AA90318C2B2D700CEFDBD /* InfoPlist.strings in Resources */,
+				2242F7AD18C2D7D000AD3CC7 /* Bottle.png in Resources */,
 				222AA90C18C2B2D700CEFDBD /* Main.storyboard in Resources */,
+				2242F7D318C2E4CC00AD3CC7 /* DataModels.bundle in Resources */,
+				2242F7D518C2E4CC00AD3CC7 /* rules.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2242F7B118C2DC2100AD3CC7 /* BabyObjects.m in Sources */,
 				222AA90F18C2B2D700CEFDBD /* ViewController.m in Sources */,
 				222AA90918C2B2D700CEFDBD /* AppDelegate.m in Sources */,
 				222AA90518C2B2D700CEFDBD /* main.m in Sources */,
@@ -378,6 +544,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/awesome/Developer/apple/hackathons/BabyBear/Common.embeddedframework,
+					/Users/awesome/Developer/apple/hackathons/BabyBear/ContextCore.embeddedframework,
+					/Users/awesome/Developer/apple/hackathons/BabyBear/ContextLocation.embeddedframework,
+					/Users/awesome/Developer/apple/hackathons/BabyBear/ContextProfiling.embeddedframework,
+					/Users/awesome/Developer/apple/hackathons/BabyBear,
+					/Users/awesome/Developer/apple/hackathons/BabyBear/NetworkServices.embeddedframework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BabyBear/BabyBear-Prefix.pch";
 				INFOPLIST_FILE = "BabyBear/BabyBear-Info.plist";
@@ -391,6 +566,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/awesome/Developer/apple/hackathons/BabyBear/Common.embeddedframework,
+					/Users/awesome/Developer/apple/hackathons/BabyBear/ContextCore.embeddedframework,
+					/Users/awesome/Developer/apple/hackathons/BabyBear/ContextLocation.embeddedframework,
+					/Users/awesome/Developer/apple/hackathons/BabyBear/ContextProfiling.embeddedframework,
+					/Users/awesome/Developer/apple/hackathons/BabyBear,
+					/Users/awesome/Developer/apple/hackathons/BabyBear/NetworkServices.embeddedframework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BabyBear/BabyBear-Prefix.pch";
 				INFOPLIST_FILE = "BabyBear/BabyBear-Info.plist";
@@ -460,6 +644,7 @@
 				222AA92918C2B2D700CEFDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		222AA92A18C2B2D700CEFDBD /* Build configuration list for PBXNativeTarget "BabyBearTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +653,7 @@
 				222AA92C18C2B2D700CEFDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FYX/FYXVisitManager.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <FYXVisitDelegate>
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *bearImage;
+@property (weak, nonatomic) IBOutlet UIImageView *bottleImage;
+@property (weak, nonatomic) IBOutlet UILabel *bearQuestion;
+@property (weak, nonatomic) IBOutlet UILabel *bottleQuestion;
+
+@property (nonatomic) BOOL bearTxtSent;
+@property (nonatomic) BOOL bottleTxtSent;
+
+@property (nonatomic) FYXVisitManager *visitManager;
 
 @end
