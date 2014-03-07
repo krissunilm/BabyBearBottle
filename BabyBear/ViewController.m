@@ -47,6 +47,9 @@ AVAudioPlayer *_audioPlayer;
     
     NSLog(@"**  Alpha setting self.bearImage.alpha = %ld",(long)self.bearImage.alpha);
     NSLog(@"**  Alpha setting self.bottleImage.alpha = %ld",(long)self.bottleImage.alpha);
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -102,7 +105,7 @@ AVAudioPlayer *_audioPlayer;
     }
      */
     
-    if (([visit.transmitter.name isEqualToString:@"Bear Beacon"]) && (rssiValue >= -65 ))
+    if (([visit.transmitter.name isEqualToString:@"Bear Beacon"]) && (rssiValue >= -80 ))
     {
         // Do stuff...
         [UIView beginAnimations:@"showbear" context:nil];
@@ -113,7 +116,7 @@ AVAudioPlayer *_audioPlayer;
         [UIView commitAnimations];
         NSLog(@"Found Bear");
        
-    } else if(([visit.transmitter.name isEqualToString:@"Bear Beacon"]) && (rssiValue < -65 )) {
+    } else if(([visit.transmitter.name isEqualToString:@"Bear Beacon"]) && (rssiValue < -80 )) {
         // Do stuff...
         [UIView beginAnimations:@"showbear" context:nil];
         [UIView setAnimationDuration:1.0];
@@ -163,7 +166,7 @@ AVAudioPlayer *_audioPlayer;
     //Kris-SRX-Dogpatch Saloon
     
     if (([visit.transmitter.name isEqualToString:@"Kris-SRX-Dogpatch Saloon"]) && (
-        rssiValue >= -65))
+        rssiValue >= -80))
     {
         // Do stuff...
         [UIView beginAnimations:@"showbottle" context:nil];
@@ -174,7 +177,7 @@ AVAudioPlayer *_audioPlayer;
         [UIView commitAnimations];
         NSLog(@"Found Bottle");
       
-    } else if (([visit.transmitter.name isEqualToString:@"Kris-SRX-Dogpatch Saloon"]) && (rssiValue < -65)) {
+    } else if (([visit.transmitter.name isEqualToString:@"Kris-SRX-Dogpatch Saloon"]) && (rssiValue < -80)) {
         
         [UIView beginAnimations:@"showbottle" context:nil];
         [UIView setAnimationDuration:1.0];
