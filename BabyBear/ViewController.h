@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <FYX/FYXVisitManager.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CoreAudio/CoreAudioTypes.h>
 
 @interface ViewController : UIViewController <FYXVisitDelegate>
 

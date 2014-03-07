@@ -9,7 +9,11 @@
 #import "ViewController.h"
 #import "BabyObjects.h"
 
-@interface ViewController ()
+@interface ViewController () {
+
+
+AVAudioPlayer *_audioPlayer;
+}
 
 @property (strong, nonatomic) BabyObjects *babyObjects;
 
@@ -98,7 +102,7 @@
     }
      */
     
-    if (([visit.transmitter.name isEqualToString:@"Hy1"]) && (rssiValue >= -65 ))
+    if (([visit.transmitter.name isEqualToString:@"Bear Beacon"]) && (rssiValue >= -65 ))
     {
         // Do stuff...
         [UIView beginAnimations:@"showbear" context:nil];
@@ -109,7 +113,7 @@
         [UIView commitAnimations];
         NSLog(@"Found Bear");
        
-    } else if(([visit.transmitter.name isEqualToString:@"Hy1"]) && (rssiValue < -65 )) {
+    } else if(([visit.transmitter.name isEqualToString:@"Bear Beacon"]) && (rssiValue < -65 )) {
         // Do stuff...
         [UIView beginAnimations:@"showbear" context:nil];
         [UIView setAnimationDuration:1.0];
@@ -119,12 +123,26 @@
         [UIView commitAnimations];
         //http://young-retreat-6253.herokuapp.com/forgot?To=%2B17244489427&What=bear
         
+        
+        //audio
+        //Setup the audio player
+        NSURL *noSoundFileURL=[NSURL fileURLWithPath:
+                               [[NSBundle mainBundle]
+                                pathForResource:@"norecording" ofType:@"wav"]];
+        
+        _audioPlayer =  [[AVAudioPlayer alloc]
+                         initWithContentsOfURL:noSoundFileURL error:nil];
+        
+        [_audioPlayer play];
+        
+        
         NSString *londonWeatherUrl =
         @"http://young-retreat-6253.herokuapp.com/forgot?To=%2B17244489427&What=bear";
         
         NSURLRequest *request = [NSURLRequest requestWithURL:
                                  [NSURL URLWithString:londonWeatherUrl]];
         if(self.bearTxtSent == FALSE) {
+            self.bearTxtSent = TRUE;
         [NSURLConnection sendAsynchronousRequest:request
                                            queue:[NSOperationQueue mainQueue]
                                completionHandler:^(NSURLResponse *response,
@@ -132,7 +150,7 @@
                                                    NSError *connectionError) {
                                    // handle response
                                    
-                                   self.bearTxtSent = TRUE;
+                                   
                                    
                                    NSLog(@"Got response %@", response);
                                }];
@@ -157,6 +175,7 @@
         NSLog(@"Found Bottle");
       
     } else if (([visit.transmitter.name isEqualToString:@"Kris-SRX-Dogpatch Saloon"]) && (rssiValue < -65)) {
+        
         [UIView beginAnimations:@"showbottle" context:nil];
         [UIView setAnimationDuration:1.0];
         [UIView setAnimationDelegate:self];
@@ -164,6 +183,17 @@
         self.bottleQuestion.alpha = 1;
         [UIView commitAnimations];
         
+        //audio
+        //need to check why audio is not playing
+        //Setup the audio player
+        NSURL *noSoundFileURL=[NSURL fileURLWithPath:
+                               [[NSBundle mainBundle]
+                                pathForResource:@"norecording" ofType:@"wav"]];
+        
+        _audioPlayer =  [[AVAudioPlayer alloc]
+                         initWithContentsOfURL:noSoundFileURL error:nil];
+        
+        [_audioPlayer play];
         
         NSString *londonWeatherUrl =
         @"http://young-retreat-6253.herokuapp.com/forgot?To=%2B17244489427&What=bottle";
@@ -171,17 +201,23 @@
         NSURLRequest *request = [NSURLRequest requestWithURL:
                                  [NSURL URLWithString:londonWeatherUrl]];
         if(self.bottleTxtSent == FALSE) {
+            self.bottleTxtSent = TRUE;
         [NSURLConnection sendAsynchronousRequest:request
                                            queue:[NSOperationQueue mainQueue]
                                completionHandler:^(NSURLResponse *response,
                                                    NSData *data,
                                                    NSError *connectionError) {
                                    // handle response
-                                   self.bottleTxtSent = TRUE;
+                                   
                                    NSLog(@"Got response %@", response);
                                }];
         
         }
+        
+        
+        
+        
+        
         NSLog(@"Lost Bottle");
     }
     

@@ -21,6 +21,7 @@
 		222AA91A18C2B2D700CEFDBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222AA8FC18C2B2D700CEFDBD /* UIKit.framework */; };
 		222AA92218C2B2D700CEFDBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222AA92018C2B2D700CEFDBD /* InfoPlist.strings */; };
 		222AA92418C2B2D700CEFDBD /* BabyBearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 222AA92318C2B2D700CEFDBD /* BabyBearTests.m */; };
+		222F80D918C972DB0045757A /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7CC18C2E4CB00AD3CC7 /* FYX.framework */; };
 		2242F7AB18C2D7BD00AD3CC7 /* Bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7AA18C2D7BD00AD3CC7 /* Bear.png */; };
 		2242F7AD18C2D7D000AD3CC7 /* Bottle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7AC18C2D7D000AD3CC7 /* Bottle.png */; };
 		2242F7B118C2DC2100AD3CC7 /* BabyObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242F7B018C2DC2100AD3CC7 /* BabyObjects.m */; };
@@ -36,8 +37,9 @@
 		2242F7D318C2E4CC00AD3CC7 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7C718C2E4CB00AD3CC7 /* DataModels.bundle */; };
 		2242F7D418C2E4CC00AD3CC7 /* ContextProfiling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7C918C2E4CB00AD3CC7 /* ContextProfiling.framework */; };
 		2242F7D518C2E4CC00AD3CC7 /* rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7CB18C2E4CB00AD3CC7 /* rules.txt */; };
-		2242F7D618C2E4CC00AD3CC7 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7CC18C2E4CB00AD3CC7 /* FYX.framework */; };
 		2242F7D718C2E4CC00AD3CC7 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7CE18C2E4CB00AD3CC7 /* NetworkServices.framework */; };
+		2242F7D918C3AE5D00AD3CC7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2242F7D818C3AE5D00AD3CC7 /* AVFoundation.framework */; };
+		2242F7DD18C3AF4C00AD3CC7 /* norecording.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2242F7DC18C3AF4C00AD3CC7 /* norecording.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		2242F7CB18C2E4CB00AD3CC7 /* rules.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rules.txt; sourceTree = "<group>"; };
 		2242F7CC18C2E4CB00AD3CC7 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FYX.framework; sourceTree = "<group>"; };
 		2242F7CE18C2E4CB00AD3CC7 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+		2242F7D818C3AE5D00AD3CC7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2242F7DC18C3AF4C00AD3CC7 /* norecording.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = norecording.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +99,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222F80D918C972DB0045757A /* FYX.framework in Frameworks */,
+				2242F7D918C3AE5D00AD3CC7 /* AVFoundation.framework in Frameworks */,
 				2242F7BD18C2E49900AD3CC7 /* Security.framework in Frameworks */,
 				2242F7D718C2E4CC00AD3CC7 /* NetworkServices.framework in Frameworks */,
 				2242F7BB18C2E48D00AD3CC7 /* MapKit.framework in Frameworks */,
 				2242F7B918C2E48000AD3CC7 /* libz.dylib in Frameworks */,
 				2242F7D218C2E4CC00AD3CC7 /* ContextLocation.framework in Frameworks */,
-				2242F7D618C2E4CC00AD3CC7 /* FYX.framework in Frameworks */,
 				2242F7B718C2E47500AD3CC7 /* CoreData.framework in Frameworks */,
 				2242F7D118C2E4CC00AD3CC7 /* ContextCore.framework in Frameworks */,
 				2242F7B518C2E46800AD3CC7 /* CoreLocation.framework in Frameworks */,
@@ -148,6 +153,7 @@
 		222AA8F718C2B2D700CEFDBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2242F7D818C3AE5D00AD3CC7 /* AVFoundation.framework */,
 				2242F7BE18C2E4CB00AD3CC7 /* Common.embeddedframework */,
 				2242F7C118C2E4CB00AD3CC7 /* ContextCore.embeddedframework */,
 				2242F7C418C2E4CB00AD3CC7 /* ContextLocation.embeddedframework */,
@@ -171,6 +177,7 @@
 		222AA8FE18C2B2D700CEFDBD /* BabyBear */ = {
 			isa = PBXGroup;
 			children = (
+				2242F7DB18C3AF3B00AD3CC7 /* Media */,
 				2242F7AE18C2DB0E00AD3CC7 /* Models */,
 				2242F7A918C2D7A700AD3CC7 /* Images */,
 				222AA90718C2B2D700CEFDBD /* AppDelegate.h */,
@@ -313,6 +320,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		2242F7DB18C3AF3B00AD3CC7 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				2242F7DC18C3AF4C00AD3CC7 /* norecording.wav */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,6 +375,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Kvana Inc.";
 				TargetAttributes = {
+					222AA8F418C2B2D700CEFDBD = {
+						DevelopmentTeam = AX766J88NA;
+					};
 					222AA91518C2B2D700CEFDBD = {
 						TestTargetID = 222AA8F418C2B2D700CEFDBD;
 					};
@@ -394,6 +412,7 @@
 				222AA90318C2B2D700CEFDBD /* InfoPlist.strings in Resources */,
 				2242F7AD18C2D7D000AD3CC7 /* Bottle.png in Resources */,
 				222AA90C18C2B2D700CEFDBD /* Main.storyboard in Resources */,
+				2242F7DD18C3AF4C00AD3CC7 /* norecording.wav in Resources */,
 				2242F7D318C2E4CC00AD3CC7 /* DataModels.bundle in Resources */,
 				2242F7D518C2E4CC00AD3CC7 /* rules.txt in Resources */,
 			);
@@ -544,6 +563,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/awesome/Developer/apple/hackathons/BabyBear/Common.embeddedframework,
@@ -557,6 +578,7 @@
 				GCC_PREFIX_HEADER = "BabyBear/BabyBear-Prefix.pch";
 				INFOPLIST_FILE = "BabyBear/BabyBear-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -566,6 +588,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/awesome/Developer/apple/hackathons/BabyBear/Common.embeddedframework,
@@ -579,6 +603,7 @@
 				GCC_PREFIX_HEADER = "BabyBear/BabyBear-Prefix.pch";
 				INFOPLIST_FILE = "BabyBear/BabyBear-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
